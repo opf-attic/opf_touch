@@ -81,6 +81,7 @@
 	</header>
 	
 	<?php
+        print $user_picture;
         hide($content['comments']);
         hide($content['links']);
         hide($content['field_tags']);
@@ -111,6 +112,7 @@
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
+      print $user_picture;
       // Hide comments, tags, and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
